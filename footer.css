@@ -1,0 +1,217 @@
+#foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50vh;
+    font-weight: 200;
+    gap: 0;
+    padding: 0 5%;
+}
+
+footer{
+    display: flex;
+    background-color: #f0e4d5;
+    width: 100%;
+    min-height: 55vh;
+    justify-content: space-around;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer>#foot>div{
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 21px;
+}
+
+.infor{
+    line-height: 4;
+    font-size: 14px;
+    text-align: center;
+}
+
+.infor li{
+    font-size: inherit;
+}
+
+.la{
+    font-size: 18px;
+    padding: 0 0 0 20%;
+}
+
+.la h3{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.la li{
+    margin-top: 30px;
+    font-size: 17px;
+    width: 40%;
+}
+
+.la li:hover{
+    opacity: 0.6;
+}
+
+footer img{
+    margin-top: 50px;
+    width: 100%;
+}
+@media screen and (max-width: 1024px){
+
+    #foot{
+        gap: 5%;
+        padding: 0 5%;
+    }
+
+    footer>#foot>div{
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .infor{
+        line-height: 3;
+        font-size: 13px;
+    }
+
+    .la{
+        padding: 0 0 0 10%;
+        font-size: 16px;
+    }
+
+    .la h3{
+        font-size: 1.2em;
+    }
+
+    .la li{
+        margin-top: 20px;
+        font-size: 15px;
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 768px){
+
+    #foot{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        padding: 0 5%;
+        min-height: 50vh;
+    }
+
+    footer>#foot>div{
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .infor{
+        line-height: 2;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .infor li{
+        font-size: 10px;
+    }
+
+    .la{
+        width: 70%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .la h3{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .la li{
+        font-size: 12px;
+        width: 40%;
+        text-align: center;
+        margin: 7px auto;
+    }
+
+    footer img{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 425px){
+
+    footer{
+        min-height: 60vh;
+    }
+
+    #foot{
+        padding: 0 5%;
+    }
+
+    footer>#foot>div{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .infor{
+        line-height: 2;
+    }
+
+    .infor li{
+        font-size: 9px;
+    }
+
+    .la{
+        width: 80%;
+    }
+
+    .la h3{
+        font-size: 1.3em;
+    }
+
+    .la li{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+
+    footer img{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 375px){
+
+    footer{
+        min-height: 55vh;
+    }
+
+    footer>#foot>div{
+        width: 85%;
+    }
+
+    .infor li{
+        font-size: 8px;
+    }
+
+    .la h3{
+        font-size: 1.2em;
+    }
+
+    .la li{
+        margin-top: 10px;
+        font-size: 9px;
+    }
+
+}
