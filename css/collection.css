@@ -1,0 +1,166 @@
+    #all_season{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        width: 80%;
+    }
+    #all_season img{
+        width: 100%;
+        display: block;
+    }
+    .season{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10%;
+        /*border: 1px solid black;*/
+    }
+    #all_season h2{
+        font-weight: 100;
+        font-size: 6em;
+        margin: 0% 5%;
+        margin-bottom: 3%;
+    }
+    .all{
+        width: 100%;
+        height: 100%;
+        transition: transform 500ms ease, box-shadow 0.3s ease;
+    }
+
+    .all:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+    .season > div{
+        width: 20%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /*border: 1px solid red;*/
+    }
+    #all_season h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #all_season h3,
+    #all_season h5{
+        margin-left: 5%;
+        font-weight: 500;
+    }
+    .right{
+        text-align: right;
+    }
+    /* 320px */
+/*미디어 쿼리*/
+@media screen and (min-width: 320px){
+    #all_season{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #all_season img{
+        width: 100%;
+    }
+    #all_season h3{
+        font-weight: 100;
+        font-size: 7px;
+        margin: 0% 5%;
+        margin-bottom: 3%;
+    }
+    #all_season h5{
+        font-weight: 100;
+        font-size: 6px;
+        margin: 0% 5%;
+        margin-bottom: 3%;
+    }
+    .season{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10%;
+        /*border: 1px solid black;*/
+    }
+    #all_season h2{
+        font-weight: 100;
+        font-size: 1.2em;
+        margin: 0% 5%;
+        margin-bottom: 3%;
+    }
+}
+
+
+/* 375px */
+@media screen and (min-width: 375px){
+    #all_season h2{
+        font-size: 1.3em;
+    }
+}
+
+
+/* 425px */
+@media screen and (min-width: 425px){
+    #all_season{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #all_season img{
+        width: 100%;
+    }
+    #all_season h3{
+        font-weight: 100;
+        font-size: 9px;
+    }
+    #all_season h5{
+        font-weight: 100;
+        font-size: 7px;
+    }
+    #all_season h2{
+        font-weight: 100;
+        font-size: 1.6em;
+        margin: 0% 5%;
+        margin-bottom: 3%;
+    }
+}
+
+
+/* 768px */
+@media screen and (min-width: 768px){
+    #all_season h3{
+        font-weight: 100;
+        font-size: 15px;
+    }
+    #all_season h5{
+        font-weight: 100;
+        font-size: 10px;
+    }
+    #all_season h2{
+        font-size: 2.5em;
+    }
+}
+
+
+/* 1024px */
+@media screen and (min-width: 1024px){
+    #all_season h3{
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    #all_season h5{
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    #all_season h2{
+        font-size: 5em;
+    }
+
+
+}
