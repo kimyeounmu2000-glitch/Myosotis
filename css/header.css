@@ -5,6 +5,8 @@
 
 .kor{
     font-family: 'MaruBuriExtraLight';
+    word-break: keep-all;
+    text-wrap: pretty;
 }
 
 body{ background-color: #f6f3ee; color: #4c4c4c;}
@@ -43,7 +45,8 @@ nav {
         /*border: 2px solid cadetblue;*/
         position: absolute;
         top: 5%;
-        left: 0%;
+        left: auto;
+        right: 0;
 }
 .sub{
     height: 1000%;
@@ -55,8 +58,9 @@ nav {
     transition: transform 300ms, opacity 300ms;
     position: absolute;
     top: 140%;
-    left: 0%;
-    text-align: left;
+    left: auto;
+    right: 0;
+    text-align: right;
     z-index: 99;
     font-size: 15px;
 }
