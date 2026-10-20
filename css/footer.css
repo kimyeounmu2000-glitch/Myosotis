@@ -55,9 +55,8 @@ footer>#foot>div{
 
 .la li{
     margin-top: 30px;
-    font-size: 15px;
-    width: auto;
-    white-space: nowrap;
+    font-size: 17px;
+    width: 40%;
 }
 
 .la li:hover{

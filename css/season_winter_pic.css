@@ -1,12 +1,10 @@
     .season{
-        background-image: url(img/winter.png);
+        background-image: url(winter.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         width: 90vh;
-        max-width: 100%;
-        aspect-ratio: 1;
-        height: auto;
+        height: 90vh;
         margin: 0 auto;
         margin-bottom: 5%;
     }
@@ -14,20 +12,20 @@
 
     .season {
         width: 80vw;
-        height: auto;
+        height: 80vw;
     }
 }
 @media screen and (max-width: 425px) {
 
     .season {
         width: 100vw;
-        height: auto;
+        height: 100vw;
     }
 }
 @media screen and (max-width: 375px) {
 
     .season {
         width: 90vw;
-        height: auto;
+        height: 90vw;
     }
 }
