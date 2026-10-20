@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/related-scents.css">
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="index.html"><img src="img/logo.svg" alt="사진"></a>
+        <a href="index.html"><img src="logo.svg" alt="사진"></a>
       </div>
       <nav>
         <a class="menu english" href="#">MENU</a>
@@ -29,11 +30,37 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="perfume-layout">
+      <aside class="related-scents" aria-labelledby="related-title">
+        <p class="related-eyebrow english">EXPLORE MORE</p>
+        <h2 id="related-title" class="kor">비슷한 향도 만나보세요</h2>
+        <p class="related-description kor">닮은 향의 느낌으로 골랐어요.</p>
+        <div class="related-list">
+          <a class="related-perfume" href="wi_wanted.html">
+            <img src="THE.png" alt="The Most Wanted Parfum 향수" loading="lazy">
+            <span class="related-brand english">Azzaro</span>
+            <span class="related-name english">The Most Wanted Parfum</span>
+            <span class="related-notes kor">바닐라 · 스파이시</span>
+          </a>
+          <a class="related-perfume" href="wi_italica.html">
+            <img src="Italica.png" alt="Italica 향수" loading="lazy">
+            <span class="related-brand english">Casamorati 1888</span>
+            <span class="related-name english">Italica</span>
+            <span class="related-notes kor">달콤한 바닐라 · 우디</span>
+          </a>
+          <a class="related-perfume" href="au_rihla.html">
+            <img src="EAU.png" alt="Eau Rihla 향수" loading="lazy">
+            <span class="related-brand english">Diptyque</span>
+            <span class="related-name english">Eau Rihla</span>
+            <span class="related-notes kor">레더 · 바닐라</span>
+          </a>
+        </div>
+        <a class="related-back kor" href="index.html#find-your-scent">다른 취향으로 찾아보기 ↗</a>
+      </aside>
       <div id="all">
         <div class="set">
           <div id="pic">
-            <img src="img/jazz.png" alt="사진">
+            <img src="Jazz.png" alt="사진">
           </div>
           <div id="text">
             <h3 class="english">Jazz Club — Maison Margiela</h3><br>
@@ -134,7 +161,7 @@
     <div id="foot">
         <div class="infor">
           <a href="index.html">
-              <img src="img/logo.svg" alt="logo사진">
+              <img src="logo.svg" alt="logo사진">
           </a>
           <ul>
               <li class="english">HTML / CSS / JavaScript / jQuery</li>
@@ -183,6 +210,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+        </div>
+</footer>
   </body>
   </html>
