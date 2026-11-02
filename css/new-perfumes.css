@@ -1,0 +1,26 @@
+/* Additional collection rows retain existing typography and breakpoints. */
+main.english { row-gap: 36px; column-gap: 2%; margin-bottom: 80px; }
+.box.new-product { background: #fff; }
+.box.new-product img { object-fit: contain; }
+#all_season .season { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px 24px; }
+#all_season .season > div { width:auto; height:auto; display:block; min-width:0; }
+#all_season .all { aspect-ratio:3/4; overflow:hidden; }
+#all_season .all img { width:100%; height:100%; object-fit:cover; }
+#all_season .all.new-product { background:#fff; }
+#all_season .all.new-product img { object-fit:contain; }
+.new-perfume #pic { background:#fff; }
+.new-perfume #pic img { display:block; aspect-ratio:3/4; object-fit:contain; }
+.new-perfume #text > p { margin-top:24px; }
+.new-perfume .lion { gap:16px; padding:36px 0; flex-wrap:wrap; }
+.new-perfume .dear { flex:1; min-width:100px; }
+.new-perfume .hand { margin-bottom:8px; }
+.new-perfume .foot { overflow-wrap:anywhere; }
+.new-notes { margin-top:20px; border-top:1px solid #d8d4c9; border-bottom:1px solid #d8d4c9; }
+.new-notes summary { cursor:pointer; padding:18px 0; font-size:16px; }
+.new-notes ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; padding:12px 0 24px; }
+.new-notes li span { display:block; line-height:1.8; }
+.new-notes li .kor { font-size:14px; }
+.source-link a { font-size:13px; text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:768px){#all_season .season {grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px;} #all_season h3{font-size:16px;} #all_season h5{font-size:12px;} }
+@media(max-width:425px){main.english{row-gap:32px;} .new-notes ul{grid-template-columns:1fr;} }
+
