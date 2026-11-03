@@ -9,7 +9,7 @@ main.english { row-gap: 36px; column-gap: 2%; margin-bottom: 80px; }
 #all_season .all.new-product { background:#fff; }
 #all_season .all.new-product img { object-fit:contain; }
 .new-perfume #pic { background:#fff; }
-.new-perfume #pic img { display:block; aspect-ratio:3/4; object-fit:contain; }
+.new-perfume #pic img { display:block; aspect-ratio:2/3; height:auto; object-fit:contain; }
 .new-perfume #text > p { margin-top:24px; }
 .new-perfume .lion { gap:16px; padding:36px 0; flex-wrap:wrap; }
 .new-perfume .dear { flex:1; min-width:100px; }
