@@ -49,3 +49,11 @@
 @media (prefers-reduced-motion: reduce) {
   .related-perfume { transition: none; }
 }
+
+@media (max-width: 768px) {
+  .perfume-layout .lion, .perfume-layout .note { font-size: 14px; }
+  .perfume-layout .lion { flex-wrap: wrap; gap: 20px 12px; }
+  .perfume-layout .lion .dear { min-width: 90px; }
+  .perfume-layout .note .tag { height: auto; min-height: 44px; padding: 8px 4px; }
+  .perfume-layout .related-name { overflow-wrap: anywhere; }
+}

@@ -138,3 +138,22 @@ header ul{
     }
 
 }
+
+/* Shared navigation owns its sizing across all page stylesheets. */
+header nav { left: auto; right: 0; font-size: 15px; }
+header .menu {
+  appearance: none; background: transparent; border: 0; border-radius: 0;
+  box-shadow: none; color: inherit; font: inherit; font-family: "Inria Serif", serif;
+  padding: 10px 0 10px 12px; min-width: 44px; min-height: 44px; cursor: pointer;
+}
+header .sub {
+  width: max-content; max-width: 85vw; height: auto; font-size: 15px;
+  top: 100%; right: 0; left: auto; text-align: right;
+  border: 0; box-shadow: none; background: transparent; padding: 8px 0;
+}
+header .sub[hidden] { display: none; }
+header .sub li { line-height: 1.6; }
+header .sub a { display: block; padding: 12px 0; min-height: 44px; }
+header.menu-open { margin-bottom: 150px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #687456; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { header .sub { transition: none; } }

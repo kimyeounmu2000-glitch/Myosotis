@@ -20,3 +20,9 @@ main.english { row-gap: 36px; column-gap: 2%; margin-bottom: 80px; }
 
 .sup > .season-detail { width: 100%; margin: 0; }
 .sup > .season { max-width: 100%; }
+
+.collection-heading { font-size: clamp(24px, 3vw, 36px); font-weight: 400; line-height: 1.5; margin-bottom: 48px; }
+#all_season { display: block; margin-inline: auto; }
+#all_season h3 { overflow-wrap: anywhere; line-height: 1.5; }
+#all_season h5 { line-height: 1.6; }
+@media (max-width: 425px) { #all_season .season { grid-template-columns: minmax(0, 1fr); } }

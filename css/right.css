@@ -184,11 +184,11 @@ margin: 5% 0;
         font-size: 1.4em;
     }
     .wirte p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .detail{
         width: 90%;
-        font-size: 0.5em;
+        font-size: 14px;
     }
     main h3,main h5{
         font-size: 0.8em;
@@ -207,11 +207,11 @@ margin: 5% 0;
         font-size: 1.1em;
     }
     .wirte p {
-        font-size: 10px;
+        font-size: 14px;
     }
     .detail{
         width: 90%;
-        font-size: 0.5em;
+        font-size: 14px;
     }
     .detail h2{
         font-size: 3em;
@@ -220,3 +220,6 @@ margin: 5% 0;
         font-size: 1.1em;
     }
 }
+main h3 { overflow-wrap: anywhere; line-height: 1.5; }
+main h5 { line-height: 1.6; }
+.detail p { font-size: max(14px, 1em); line-height: 1.9; }
