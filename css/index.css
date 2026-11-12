@@ -596,13 +596,20 @@ a:focus-visible { outline: 3px solid #687456; outline-offset: 5px; }
 .season-discovery > h2 { margin-bottom: 72px; }
 @media (max-width: 900px) {
   .scent-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  #main-image { display: flex; flex-direction: column; align-items: stretch; }
-  #main-image::before { display: none; }
-  .maint { order: -1; padding: 24px 0 32px; }
+  /* Keep the full image and copy in one shared, content-sized composition. */
+  #main-image { display: grid; align-items: start; isolation: isolate; }
+  .hero-original { align-self: start; }
+  #main-image::before {
+    display: block; z-index: 1;
+    background: linear-gradient(to bottom, transparent 0, transparent 20vw, rgba(246,243,238,.92) 48vw, #f6f3ee 60vw);
+  }
+  .maint { order: 0; z-index: 2; padding: 40vw 5% 28px; min-width: 0; }
+  .maint h1 { font-size: clamp(25px, 5vw, 36px); }
+  .hero-actions .scent-primary { max-width: 100%; box-sizing: border-box; gap: 12px; }
 }
 @media (max-width: 540px) {
   #main-image { min-height: 0; margin: 8px 0 88px; }
-  .maint { padding: 24px 0 32px; }
+  .maint { padding: 40vw 4% 24px; }
   .hero-eyebrow { font-size: 10px; line-height: 1.7; margin-bottom: 32px; }
   .hero-description { font-size: 15px; margin-top: 32px; }
   .hero-actions { gap: 24px; margin-top: 40px; align-items: flex-start; flex-direction: column; }
@@ -629,8 +636,18 @@ a:focus-visible { outline: 3px solid #687456; outline-offset: 5px; }
   .long .pu { height: auto; min-height: 0; padding: 28px 0; gap: 20px; }
   .long .par { font-size: 14px; line-height: 1.9; }
   .long .par h2 { font-size: 18px; line-height: 1.6; }
-  .last .foot { display: flex; flex-direction: column; gap: 24px; }
-  .last .foot > p { position: static; width: 100%; height: auto; font-size: 14px; line-height: 1.9; text-align: left; }
+  .last .foot { display: grid; isolation: isolate; }
+  .last .foot > img { grid-area: 1 / 1; align-self: start; display: block; width: 100%; height: auto; }
+  .last .foot::before {
+    content: ""; grid-area: 1 / 1; z-index: 1; pointer-events: none;
+    background: linear-gradient(to bottom, transparent, rgba(246,243,238,.9) 24vw, #f6f3ee 48vw);
+  }
+  .last .foot > p {
+    grid-area: 1 / 1; z-index: 2; position: relative; inset: auto;
+    box-sizing: border-box; margin: 0; padding: 24vw 5% 24px;
+    width: 100%; height: auto; font-size: 14px; line-height: 1.9;
+    text-align: left; word-break: keep-all; overflow-wrap: anywhere;
+  }
   .season-discovery .sea { width: 77px; height: 44px; font-size: 13px; }
 }
 @media (max-width: 425px) {
