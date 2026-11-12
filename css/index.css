@@ -601,15 +601,15 @@ a:focus-visible { outline: 3px solid #687456; outline-offset: 5px; }
   .hero-original { align-self: start; }
   #main-image::before {
     display: block; z-index: 1;
-    background: linear-gradient(to bottom, transparent 0, transparent 20vw, rgba(246,243,238,.92) 48vw, #f6f3ee 60vw);
+    background: linear-gradient(to bottom, transparent 0, transparent calc(20vw - 28px), rgba(246,243,238,.92) calc(48vw - 28px), #f6f3ee calc(60vw - 28px));
   }
-  .maint { order: 0; z-index: 2; padding: 40vw 5% 28px; min-width: 0; }
+  .maint { order: 0; z-index: 2; padding: calc(40vw - 28px) 5% 28px; min-width: 0; }
   .maint h1 { font-size: clamp(25px, 5vw, 36px); }
   .hero-actions .scent-primary { max-width: 100%; box-sizing: border-box; gap: 12px; }
 }
 @media (max-width: 540px) {
   #main-image { min-height: 0; margin: 8px 0 88px; }
-  .maint { padding: 40vw 4% 24px; }
+  .maint { padding: calc(40vw - 28px) 4% 24px; }
   .hero-eyebrow { font-size: 10px; line-height: 1.7; margin-bottom: 32px; }
   .hero-description { font-size: 15px; margin-top: 32px; }
   .hero-actions { gap: 24px; margin-top: 40px; align-items: flex-start; flex-direction: column; }
